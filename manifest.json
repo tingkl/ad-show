@@ -5,9 +5,15 @@
     "icons": {
         "128": "images/icon.png"
     },
+    "permissions": ["tabs",
+        "activeTab",
+        "http://*.baidu.com/*",
+        "http://lego-dev.baidu.com/",
+        "http://localhost/"],
     "description": "Auto generate AD-Show site.",
     "browser_action": {
         "default_icon": "images/icon.png",
+        "default_title": "AD Show",
         "default_popup": "popup.html"
     },
     "content_scripts": [{
@@ -18,9 +24,5 @@
             "js/grab.js",
             "lib/jquery.js"
         ]
-    }],
-    "permissions": ["tabs",
-        "http://www.baidu.com/",
-        "http://lego-dev.baidu.com/",
-        "http://localhost/"]
+    }]
 }
