@@ -5,6 +5,7 @@ $(function () {
     var logDom = $('#log');
     var ids = [];
     var domain = 'http://lego-dev.baidu.com:8999';//'http://localhost:8999';
+
     function fetchLog() {
         $.ajax({url: domain + '/adshow/logs?' + Math.random(), success: function (logs) {
             if (logs instanceof Array) {
@@ -32,11 +33,12 @@ $(function () {
             console.dir(arguments);
         }});
     }
+
     $('#compose').click(function () {
         logDom.show().html('');
         chrome.tabs.query({active: true, currentWindow: true}, function (tabs) {
-            chrome.tabs.sendMessage(tabs[0].id, {cmd: "grab"}, function(response) {
-                if (response.cmd == "grab") {
+            chrome.tabs.sendMessage(tabs[0].id, {cmd: "grab"}, function (response) {
+                if (response.cmd === "grab") {
                     if (!response.left && !response.right) {
                         alert('该页面不可抓取!');
                         return;
@@ -75,4 +77,12 @@ $(function () {
             });
         });
     });
+
+    /*chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
+        console.log(sender.tab ? "from a content script:" + sender.tab.url : "from the extension");
+        if (request.cmd === 'hack') {
+            console.dir(request.config);
+        }
+        sendResponse("ok");
+    });*/
 });

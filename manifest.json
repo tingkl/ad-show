@@ -11,6 +11,9 @@
         "http://lego-dev.baidu.com/",
         "http://localhost/"],
     "description": "Auto generate AD-Show site.",
+    "web_accessible_resources": [
+        "js/hack.js"
+    ],
     "browser_action": {
         "default_icon": "images/icon.png",
         "default_title": "AD Show",
@@ -18,11 +21,11 @@
     },
     "content_scripts": [{
         "matches": [
-            "http://*.baidu.com/*"
+            "http://www.baidu.com/*"
         ],
         "js": [
-            "js/grab.js",
-            "lib/jquery.js"
+            "lib/jquery.js",
+            "js/grab.js"
         ]
     }]
 }
