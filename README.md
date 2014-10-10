@@ -3,7 +3,6 @@
 ### 下载插件源代码并解压
 
 ![http://bs.baidu.com/adtest/adshowplugin/x1.jpg](http://bs.baidu.com/adtest/adshowplugin/x1.jpg)
-
 ![http://bs.baidu.com/adtest/adshowplugin/x2.jpg](http://bs.baidu.com/adtest/adshowplugin/x2.jpg)
 
 ### 从源代码安装插件
@@ -14,7 +13,7 @@
 
 ![http://bs.baidu.com/adtest/adshowplugin/x3.jpg](http://bs.baidu.com/adtest/adshowplugin/x3.jpg)
 
-# 打开页面http://*.baidu.com/*
+# 打开页面http://www.baidu.com/xxx
 
 * 点击插件图标，点击`Compose`按钮，生成adshow站点
 
