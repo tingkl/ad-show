@@ -14,7 +14,12 @@
     "web_accessible_resources": [
         "js/hack.js"
     ],
-    "browser_action": {
+    "background": {
+        "scripts": [
+            "js/bg.js"
+        ]
+    },
+    "page_action": {
         "default_icon": "images/icon.png",
         "default_title": "AD Show",
         "default_popup": "popup.html"

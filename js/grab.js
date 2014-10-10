@@ -14,6 +14,7 @@ function fetchRight() {
     }
     return {fragment1: scripts[1].innerHTML, fragment2: scripts[2].innerHTML, fragment3: scripts[3].innerHTML};
 }
+chrome.runtime.sendMessage({cmd: "show"}, function(response) {  console.log(response); });
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
     console.log(sender.tab ? "from a content script:" + sender.tab.url : "from the extension");
     if (request.cmd === "grab") {
