@@ -13,7 +13,7 @@
 
 ![http://bs.baidu.com/adtest/adshowplugin/x3.jpg](http://bs.baidu.com/adtest/adshowplugin/x3.jpg)
 
-# 打开页面http://www.baidu.com/xxx
+### 打开页面http://www.baidu.com/xxx
 
 * 点击插件图标，点击`Compose`按钮，生成adshow站点
 
