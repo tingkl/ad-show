@@ -13,7 +13,7 @@
 
 ![http://bs.baidu.com/adtest/adshowplugin/x3.jpg](http://bs.baidu.com/adtest/adshowplugin/x3.jpg)
 
-### 打开有物料的maya页面或者百度广告页，例如http://www.baidu.com/s?wd=ix25&rsv_spt=1&issp=1&f=8&rsv_bp=0&ie=utf-8&tn=baiduhome_pg&rsv_enter=1&rsv_sug3=5&rsv_sug4=406&rsv_sug1=4&rsv_sug2=0&inputT=2260
+### 打开有物料的maya页面或者百度广告页，例如http://www.baidu.com/s?wd=ix25
 
 * 点击插件图标，点击`Compose`按钮，生成adshow站点
 
