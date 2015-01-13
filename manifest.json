@@ -8,7 +8,9 @@
     "permissions": ["tabs",
         "activeTab",
         "http://*.baidu.com/*",
+        "https://*.baidu.com/*",
         "http://lego-dev.baidu.com/",
+        "https://lego-dev.baidu.com/",
         "http://localhost/"],
     "description": "Auto generate AD-Show site.",
     "web_accessible_resources": [
@@ -26,7 +28,8 @@
     },
     "content_scripts": [{
         "matches": [
-            "http://www.baidu.com/*"
+            "http://www.baidu.com/*",
+            "https://www.baidu.com/*"
         ],
         "js": [
             "lib/jquery.js",
