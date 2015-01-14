@@ -1,5 +1,11 @@
 function fetchLeft() {
-    var left = $('#content_left div').first();
+    var left;
+    if (window.location.hostname === 'ecma.bdimg.com') {
+        left = $('#content_left').first();
+    }
+    else {
+        left = $('#content_left div').first();
+    }
     var scripts = left.find('script');
     if (scripts.length < 4) {
         return null;
@@ -7,7 +13,13 @@ function fetchLeft() {
     return {fragment1: scripts[1].innerHTML, fragment2: scripts[2].innerHTML, fragment3: scripts[3].innerHTML};
 }
 function fetchRight() {
-    var right = $('#content_right table table td').first();
+    var right;
+    if (window.location.hostname === 'ecma.bdimg.com') {
+        right = $('#content_right table td').first();
+    }
+    else {
+        right = $('#content_right table table td').first();
+    }
     var scripts = right.find('script');
     if (scripts.length < 4) {
         return null;

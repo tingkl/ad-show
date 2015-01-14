@@ -7,6 +7,7 @@
     },
     "permissions": ["tabs",
         "activeTab",
+        "http://ecma.bdimg.com/lego-mat-offline/*",
         "http://*.baidu.com/*",
         "https://*.baidu.com/*",
         "http://lego-dev.baidu.com/",
@@ -28,6 +29,7 @@
     },
     "content_scripts": [{
         "matches": [
+            "http://ecma.bdimg.com/lego-mat-offline/*",
             "http://www.baidu.com/*",
             "https://www.baidu.com/*"
         ],
