@@ -1,15 +1,30 @@
 function fetchLeft() {
     var left;
+    var scripts;
     if (window.location.hostname === 'ecma.bdimg.com') {
         left = $('#content_left').first();
     }
     else {
         left = $('#content_left div').first();
+        scripts = left.find('script');
+        if (scripts.length < 4) {
+            left = $($('#content_left > div')[1]);
+        }
     }
-    var scripts = left.find('script');
+    scripts = left.find('script');
     if (scripts.length < 4) {
         return null;
     }
+    var _scripts = [];
+    for (var i = 0; i< scripts.length; i++) {
+        if (scripts[i].src) {
+
+        }
+        else {
+            _scripts.push(scripts[i]);
+        }
+    }
+    scripts = _scripts;
     return {fragment1: scripts[1].innerHTML, fragment2: scripts[2].innerHTML, fragment3: scripts[3].innerHTML};
 }
 function fetchRight() {

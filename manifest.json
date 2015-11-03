@@ -31,6 +31,7 @@
         "matches": [
             "http://ecma.bdimg.com/lego-mat-offline/*",
             "http://www.baidu.com/*",
+            "http://*.baidu.com/*",
             "https://www.baidu.com/*"
         ],
         "js": [
